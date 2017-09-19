@@ -1,0 +1,10 @@
+html {
+    background-color: #cbcbcb;
+}
+
+body {
+    width: 375px;
+    height: 667px;
+    border: 1px solid red;
+    background-color: #fff;
+}

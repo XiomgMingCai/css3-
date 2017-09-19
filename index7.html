@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>画五角星 </title>
+    <link rel="stylesheet" href="http://oosfr8ich.bkt.clouddn.com/reset.css" type="text/css">
+    <link rel="stylesheet" href="./base.css">
+</head>
+<style type="text/css">
+    .start {
+        width: 0;
+        height: 0;
+        margin: 100px auto 0 auto;
+
+        border-right: 100px solid transparent;
+        border-bottom: 70px solid red;
+        border-left: 100px solid transparent;
+
+        -webkit-transform: rotate(35deg);
+        -moz-transform: rotate(35deg);
+        -ms-transform: rotate(35deg);
+        -o-transform: rotate(35deg);
+        transform: rotate(35deg);
+
+        position: relative;
+    }
+
+    .start::before {
+        content: '';
+        width: 0;
+        height: 0;
+
+        border-right: 30px solid transparent;
+        border-bottom: 70px solid red;
+        border-left: 30px solid transparent;
+
+        -webkit-transform: rotate(-35deg);
+        -moz-transform: rotate(-35deg);
+        -ms-transform: rotate(-35deg);
+        -o-transform: rotate(-35deg);
+        transform: rotate(-35deg);
+
+        position: absolute;
+
+        top: -45px;
+        left: -65px
+    }
+
+    .start::after {
+        content: '';
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-right: 100px solid transparent;
+        border-bottom: 70px solid red;
+        border-left: 100px solid transparent;
+
+        -webkit-transform: rotate(-70deg);
+        -moz-transform: rotate(-70deg);
+        -ms-transform: rotate(-70deg);
+        -o-transform: rotate(-70deg);
+        transform: rotate(-70deg);
+
+        top: 3px;
+        left: -105px;
+    }
+</style>
+<body>
+<div class="start"></div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>画三角行 </title>
+    <link rel="stylesheet" href="http://oosfr8ich.bkt.clouddn.com/reset.css" type="text/css">
+    <style type="text/css"></style>
+    <link rel="stylesheet" href="./base.css">
+</head>
+<style>
+    .sanjiao {
+        border-top: 50px solid red;
+        border-right: 50px solid #f96b66;
+        border-bottom: 50px solid #17a916;
+        border-left: 50px solid #0c1bff;
+
+        width: 0;
+        height: 0;
+        margin: 50px auto;
+    }
+    .sanjiao2 {
+        border-top: 50px solid transparent;
+        border-right: 0px solid transparent;
+        border-bottom: 50px solid transparent;
+        border-left: 50px solid #0c1bff;
+
+        width: 0;
+        height: 0;
+        margin: 50px auto;
+    }
+    .sanjiao3 {
+        border-top: 50px solid #999;
+        border-right: 50px solid transparent;
+        border-bottom: 0px solid transparent;
+        border-left: 50px solid transparent;
+
+        width: 0;
+        height: 0;
+        margin: 50px auto;
+    }
+    .dialog{
+        background-color: #6a6;
+        margin: 0 50px;
+        padding: 10px;
+        border-radius: 6px;
+        color: #fff;
+        font-weight: bold;
+        position: relative;
+    }
+    .dialog::before{
+        content: '  ';
+
+        border-top: 10px solid transparent;
+        border-right: 10px solid #6a6;
+        border-bottom: 10px solid transparent;
+        /*border-left: 10px solid transparent;*/
+
+        width: 0;
+        height: 0;
+
+        position: absolute;
+        left: -10px;
+    }
+</style>
+<body>
+<div class="sanjiao"></div>
+<div class="sanjiao2"></div>
+<div class="sanjiao3"></div>
+
+<div class="dialog">hello world ! </div>
+</body>
+</html>
