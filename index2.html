@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="http://oosfr8ich.bkt.clouddn.com/reset.css" type="text/css">
+    <title>结构伪类选择器</title>
+</head>
+<body>
+
+<div class="content">
+    <ul class="clearfix">
+        <p>1</p>
+        <li><a href="">2</a></li>
+        <li><a href="">3</a></li>
+        <li><a href="">4</a></li>
+        <li><a href="">5</a></li>
+        <li><a href="">6</a></li>
+        <li><a href="">7</a></li>
+        <li><a href="">8</a></li>
+        <li><a href="">9</a></li>
+        <li><a href="">10</a></li>
+        <p>11</p>
+    </ul>
+</div>
+
+<div class="content">
+    <ul class="clearfix">
+        <li><a href="">1</a></li>
+        <!--就一个就亮-->
+        <!--<li><a href="">2</a></li>-->
+    </ul>
+</div>
+
+<div class="content">
+    <ul class="clearfix">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+</div>
+
+<style>
+    .content {
+        margin: 80px;
+        border: 1px solid red;
+        box-sizing: border-box;
+        max-width: 350px;
+    }
+
+    .clearfix {
+        clear: both;
+        overflow: auto;
+    }
+
+    .content li {
+        float: left;
+
+    }
+
+    .content li a {
+        display: block;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        border-radius: 10px;
+        text-align: center;
+        background-color: #f36;
+        margin: 10px 5px;
+    }
+
+    /*.content li:first-child{*/
+        /*background-color: #0f0;*/
+    /*}*/
+    /*.content li:last-child{*/
+        /*background-color: #0f0;*/
+    /*}*/
+    /*.content li:nth-child(4n+1){*/
+        /*background-color: #0f0;*/
+    /*}*/
+    /*.content li:nth-child(even){*/
+        /*background-color: #0f0;*/
+    /*}*/
+    /*.content li:nth-last-of-type(odd){*/
+        /*background-color: #0f0;*/
+    /*}*/
+    .content li:only-child{
+        background-color: #0f0;
+    }
+    /*.content li:last-of-type{*/
+        /*background-color: #0f0;*/
+    /*}*/
+    .content li:empty{
+        height: 20px;
+        width: 20px;
+        background-color: #0f0;
+        border:1px solid red;
+
+    }
+
+
+</style>
+</body>
+</html>
