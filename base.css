@@ -7,4 +7,5 @@ body {
     height: 667px;
     border: 1px solid red;
     background-color: #fff;
+    margin: 0 auto;
 }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>画 太极图</title>
+    <link rel="stylesheet" href="http://oosfr8ich.bkt.clouddn.com/reset.css" type="text/css">
+    <link rel="stylesheet" href="./base.css">
+</head>
+<style type="text/css">
+    body {
+    background-color: #9e9e9e;
+    }
+
+    .taiji {
+        width: 150px;
+        height: 300px;
+        border-radius:50%;
+        background-color: white;
+        border-left: 150px solid black;
+        position: relative;
+    }
+    .taiji::before{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        padding: 25px;
+        border: 50px solid black;
+        border-radius: 50%;
+        background-color: white;
+        left: -75px;
+
+    }
+    .taiji::after{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        padding: 25px;
+        border: 50px solid white;
+        border-radius: 50%;
+        background-color: black;
+        left: -75px;
+        top: 150px;
+    }
+</style>
+<body>
+<div style=" margin: 100px auto;" class="taiji"></div>
+</body>
+</html>

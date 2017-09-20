@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>线性渐变</title>
+    <link rel="stylesheet" href="http://oosfr8ich.bkt.clouddn.com/reset.css" type="text/css">
+    <link rel="stylesheet" href="./base.css">
+</head>
+<style type="text/css">
+    .demo1 {
+        width: 90%;
+        height: 150px;
+        background-color: red;
+        margin: 40px auto;
+        /*浏览器支持不好 所以只能在background-image下使用*/
+        /*background-image:linear-gradient(red,Green,Blue) ;*/
+        /*background-image:linear-gradient(to right,red ,Green,Blue) ;*/
+        /*background-image: linear-gradient(to right,Red  ,Green ,Blue )  ;*/
+        background-image: linear-gradient(to right, Red, Green, Blue)
+    }
+
+    .demo2 {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 1px solid #151515;
+    }
+    .circle{
+        background-image: radial-gradient(orange, green);
+    }
+    .circle2{
+        background-image: radial-gradient( 20px circle at center ,orange, green);
+    }
+    .ellipse{
+        background-image: radial-gradient(50px 30px  ellipse at center, green ,orange);
+    }
+</style>
+<body>
+<center>
+    <div class="demo1"></div>
+    <div class="demo2 circle"></div>
+    <div class="demo2 circle2"></div>
+    <div class="demo2 ellipse"></div>
+
+</center>
+</body>
+</html>

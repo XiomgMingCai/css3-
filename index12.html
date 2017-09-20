@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>天猫商城</title>
+    <link rel="stylesheet" href="http://oosfr8ich.bkt.clouddn.com/reset.css" type="text/css">
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.js"></script>
+</head>
+<style type="text/css">
+    body {
+        background-color: #ddd;
+    }
+
+    .content {
+        width: 100%;
+        text-align: center;
+    }
+
+    li {
+        margin: 10px;
+        /*margin-right: 20px;*/
+        /*margin-bottom: 20px;*/
+        display: inline-block;
+        width: 220px;
+        height: 350px;
+        box-sizing: border-box;
+        border: 3px solid rgba(255, 0, 0, 0);
+        background-color: #fff;
+    }
+
+    li:hover {
+        border: 3px solid rgba(255, 0, 0, 1);
+        cursor:pointer;
+    }
+
+    .img img {
+        transition: all .6s;
+    }
+
+    .img img:hover {
+        opacity: .6;
+    }
+
+    .img {
+        margin: 0 auto;
+        width: 210px;
+        height: 210px;
+    }
+</style>
+<body>
+<div class="content" id="app">
+    <ul>
+        <li v-for="item  of 10">
+            <div class="img"><img width="100%" height="100%" src="./goods.jpg" alt=""></div>
+            <div class="goods-title">Samsung/三星 MZ-75E250B/CN</div>
+            <div class="price">¥669.00</div>
+        </li>
+    </ul>
+</div>
+<script>
+    var vm = new Vue({
+        data: {
+            newTodo: '',
+            todos: [
+                {text: 'add some todos'}
+            ]
+        }, computed: {
+            // 仅读取，值只须为函数
+            aDouble: function () {
+                return this.a * 2
+            },
+            // 读取和设置
+            aPlus: {
+                get: function () {
+                    return this.a + 1
+                },
+                set: function (v) {
+                    this.a = v - 1
+                }
+            }
+        },
+        methods: {
+            addTodo: function () {
+                var text = this.newTodo.trim()
+                if (text) {
+                    this.todos.push({text: text})
+                    this.newTodo = ''
+                }
+            }
+        },
+        watch: {
+            time_zhouqi: {
+                handler: function (val, oldval) {
+                    console.log('新值:' + val + ' /老值:' + oldval);
+                }
+            }
+        },
+        mounted: function () {
+            this.$nextTick(function () {
+                //        this._init()
+                vm._init()
+            })
+        }
+    }).$mount('#app');
+</script>
+</body>
+</html>
