@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>@keyframes 关键帧</title>
+    <link rel="stylesheet" href="http://oosfr8ich.bkt.clouddn.com/reset.css" type="text/css">
+    <!--<link rel="stylesheet" href="./base.css">&lt;!&ndash;&ndash;&gt;-->
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.js"></script>
+    <style>
+        #app {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: fixed;
+            animation: mymove 3s infinite;
+            animation-delay: 3s;
+        }
+
+        @keyframes mymove {
+            from {
+                top: 0;
+                left: 20%;
+
+            }
+            to {
+                top: 0;
+                left: 80%;
+            }
+
+        }
+
+        #app2 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: fixed;
+            /*animation: mymove 2s infinite;*/
+            animation-name:mymove;
+
+            animation-duration: 3s;
+            /*动画风格*/
+            animation-timing-function: ease;
+            /*延迟执行*/
+            animation-delay: 3s;
+            /*infinite无限循环*/
+            animation-iteration-count: 3;
+            /*normal 默认值 reverse相反 */
+            animation-direction: alternate;
+        }
+
+        @keyframes mymove {
+            0% {
+                top: 0;
+                left: 20%;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background-color: #1eff2a;
+            }
+            25% {
+                top: 0;
+                left: 80%;
+            }
+            50% {
+                top: 80%;
+                left: 80%;
+            }
+            75% {
+                top: 80%;
+                left: 20%;
+            }
+            100% {
+                top: 0;
+                left: 20%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<!--<section id="app"></section>-->
+<section id="app2"></section>
+</body>
+</html>
