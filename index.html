@@ -15,7 +15,12 @@
     <input disabled type="text" placeholder="disabled 不可用">
     <br>
     <input  type="text">
+
 </center>
+<div class="img">
+    <img style="width: 200px;height: 200px;" src="./che.png" alt="">
+
+</div>
 </body>
 <style>
     input:enabled{
@@ -40,6 +45,18 @@
     a:active{
         color: green;
     }
-
+    .img{
+        border: 9px solid transparent;
+        cursor: pointer;
+        position: relative;
+        -webkit-transition: all 3s;
+        -moz-transition: all 3s;
+        -ms-transition: all 3s;
+        -o-transition: all 3s;
+        transition: all 3s;
+    }
+    .img:hover{
+        border: 9px solid #1eff2a;
+    }
 </style>
 </html>

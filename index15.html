@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3 盒子阴影效果</title>
+    <link rel="stylesheet" href="http://oosfr8ich.bkt.clouddn.com/reset.css" type="text/css">
+</head>
+<style type="text/css">
+    .content {
+        display: inline-block;
+        margin-top: 100px;
+        margin-left: 100px;
+
+    }
+
+    .box {
+        /*border: 1px solid red;*/
+        -webkit-box-shadow:   10px 10px 3px #333;
+        -moz-box-shadow:  10px 10px 3px #333;
+        box-shadow:   10px 10px 3px #333;
+    }
+
+    .content-item-l {
+        float: left;
+        -webkit-transform: rotate(7deg);
+        -moz-transform: rotate(7deg);
+        -ms-transform: rotate(7deg);
+        -o-transform: rotate(7deg);
+        transform: rotate(7deg);
+
+    }
+
+    .content-item-r {
+        float: left;
+        -webkit-transform: rotate(-7deg);
+        -moz-transform: rotate(-7deg);
+        -ms-transform: rotate(-7deg);
+        -o-transform: rotate(-7deg);
+        transform: rotate(-7deg);
+    }
+</style>
+<body>
+<div class="content">
+    <div class="box content-item content-item-r ">
+        <img src="./222.jpg">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="box content-item content-item-l">
+        <img src="./111.jpg">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+</div>
+</body>
+</html>

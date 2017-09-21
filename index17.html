@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>仿造天猫 专题</title>
+    <link rel="stylesheet" href="http://oosfr8ich.bkt.clouddn.com/reset.css" type="text/css">
+    <!--<link rel="stylesheet" href="./base.css">-->
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.js"></script>
+
+</head>
+<link rel="stylesheet" href="./style.css">
+<body>
+<section id="app">
+    <div v-for="item of 6" class="item-box">
+        <h1>手机馆</h1>
+        <p class="content">Lorem ipsum dolor sit amet.</p>
+        <div class="img"><img src="./TB10ScadrsTMeJjy1zewu3OCVXa.png"></div>
+    </div>
+</section>
+
+<script>
+    var vm = new Vue({
+        data: {
+            newTodo: '',
+            todos: [
+                {text: 'add some todos'}
+            ]
+        }, computed: {
+            // 仅读取，值只须为函数
+            aDouble: function () {
+                return this.a * 2
+            },
+            // 读取和设置
+            aPlus: {
+                get: function () {
+                    return this.a + 1
+                },
+                set: function (v) {
+                    this.a = v - 1
+                }
+            }
+        },
+        methods: {
+            addTodo: function () {
+                var text = this.newTodo.trim()
+                if (text) {
+                    this.todos.push({text: text})
+                    this.newTodo = ''
+                }
+            }
+        },
+        watch: {
+            time_zhouqi: {
+                handler: function (val, oldval) {
+                    console.log('新值:' + val + ' /老值:' + oldval);
+                }
+            }
+        },
+        mounted: function () {
+            this.$nextTick(function () {
+                //        this._init()
+                vm._init()
+            })
+        }
+    }).$mount('#app');
+</script>
+</body>
+</html>

@@ -8,6 +8,7 @@
 </head>
 <style type="text/css">
     .start {
+        cursor: pointer;
         width: 0;
         height: 0;
         margin: 100px auto 0 auto;
@@ -23,6 +24,12 @@
         transform: rotate(35deg);
 
         position: relative;
+
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -ms-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
     }
 
     .start::before {
@@ -63,6 +70,9 @@
 
         top: 3px;
         left: -105px;
+    }
+    .start:hover{
+        border-bottom: 70px solid #1eff2a;
     }
 </style>
 <body>
