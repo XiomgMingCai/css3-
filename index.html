@@ -1,62 +1,47 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./base.css">
-    <title>css3 伪类选择器.html</title>
+    <title></title>
+    <base href="/">
+    <style>
+        iframe {
+            width: 32%;
+            height: 700px;
+        }
+    </style>
 </head>
 <body>
-<center>
-    <a href="#">http://wx.sppays.com</a>
-    <hr>
-    <input disabled type="text" placeholder="disabled 不可用">
-    <br>
-    <input  type="text">
-
-</center>
-<div class="img">
-    <img style="width: 200px;height: 200px;" src="./che.png" alt="">
-
-</div>
+<a href="/index1.html"></a>
+<iframe  src="/index1.html"></iframe>
+<iframe src="/index2.html"></iframe>
+<iframe src="/index3.html"></iframe>
+<iframe src="/index5.html"></iframe>
+<iframe src="/index6.html"></iframe>
+<iframe src="/index7.html"></iframe>
+<iframe src="/index8.html"></iframe>
+<iframe src="/index9.html"></iframe>
+<iframe src="/index10.html"></iframe>
+<iframe src="/index11.html"></iframe>
+<iframe src="/index12.html"></iframe>
+<iframe src="/index13.html"></iframe>
+<iframe src="/index13.html"></iframe>
+<iframe src="/index14.html"></iframe>
+<iframe src="/index15.html"></iframe>
+<iframe src="/index16.html"></iframe>
+<iframe src="/index17.html"></iframe>
+<iframe src="/index18.html"></iframe>
+<iframe src="/index19.html"></iframe>
+<iframe src="/index20.html"></iframe>
+<iframe src="/index21.html"></iframe>
+<iframe src="/index22.html"></iframe>
+<iframe src="/index23.html"></iframe>
+<iframe src="/index24.html"></iframe>
 </body>
-<style>
-    input:enabled{
-        background-color: #1cda1b;
+<script>
+    window.onload = function (ev) {
+        var iframe = document.getElementsByName('iframe');
+        console.log(iframe);
     }
-
-    input:disabled{
-        background-color: red;
-    }
-
-
-    a:link {
-        color: #999;
-    }
-
-    a:visited{
-        color: greenyellow;
-    }
-    a:hover{
-        color: #0c1bff;
-    }
-    a:active{
-        color: green;
-    }
-    .img{
-        border: 9px solid transparent;
-        cursor: pointer;
-        position: relative;
-        -webkit-transition: all 3s;
-        -moz-transition: all 3s;
-        -ms-transition: all 3s;
-        -o-transition: all 3s;
-        transition: all 3s;
-    }
-    .img:hover{
-        border: 9px solid #1eff2a;
-    }
-</style>
+</script>
 </html>
