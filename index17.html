@@ -3,18 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <title>仿造天猫 专题</title>
-    <link rel="stylesheet" href="http://oosfr8ich.bkt.clouddn.com/reset.css" type="text/css">
     <!--<link rel="stylesheet" href="./base.css">-->
     <script src="https://cdn.bootcss.com/vue/2.4.2/vue.js"></script>
-
 </head>
-<link rel="stylesheet" href="./style.css">
+<style>.item-box {
+    margin: 5px;
+    display: inline-block;
+    border: 1px solid #999;
+    text-align: center;
+    width: 230px;
+    height: 280px;
+}
+.item-box:hover .img img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.item-box .content {
+    font-size: 15px;
+    padding-bottom: 28px;
+}
+.item-box .img {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.item-box .img img {
+    transform: scale(1);
+}
+.item-box .img:before {
+    content: '';
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    background-color: #eee;
+    border-radius: 50%;
+    z-index: -1;
+    left: 36px;
+}</style>
 <body>
 <section id="app">
     <div v-for="item of 6" class="item-box">
         <h1>手机馆</h1>
         <p class="content">Lorem ipsum dolor sit amet.</p>
-        <div class="img"><img src="./TB10ScadrsTMeJjy1zewu3OCVXa.png"></div>
+        <div class="img"><img src="./TB10ScadrsTMeJjy1zewu3OCVXa.png" width="140" height="140"></div>
     </div>
 </section>
 

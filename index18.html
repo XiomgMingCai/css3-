@@ -3,43 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>仿造天猫 专题</title>
-    <link rel="stylesheet" href="http://oosfr8ich.bkt.clouddn.com/reset.css" type="text/css">
     <!--<link rel="stylesheet" href="./base.css">-->
-    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.js"></script>
     <style>
-        .item-box {
-            border: 1px solid #999;
-            width: 250px;
-            height: 250px;
-            cursor: pointer;
-        }
 
-        .item-box:hover img {
-            left: -15px;
-        }
 
         .img {
-            top: 50px;
-            left: 40px;
-            position: relative;
-        }
 
-        img {
-            width: 200px;
-            height: 200px;
-            position: absolute;
-            transition: all 0.5s ;
+        }
+        .img :hover{
+            margin-top: 20px;
+            transition: all 2s;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-<section id="app">
-    <div v-for="item of 6" class="item-box">
-        <h1>好车一口价格</h1>
-        <p class="content">Lorem ipsum dolor sit amet.</p>
-        <div class="img"><img src="./che.png"></div>
-    </div>
-</section>
-<script></script>
+<div class="img">
+    <img  src="./111.jpg" width="360" height="202">
+</div>
 </body>
 </html>
